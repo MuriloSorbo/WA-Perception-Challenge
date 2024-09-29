@@ -4,8 +4,6 @@ This project detects red color in an image, finds the contours of the red region
 
 ## Output Image
 
-The generated image after running the code will be saved as `out.png`. An example image (`out.png`) is shown below:
-
 ![red.png](./red.png) | ![out.png](./out.png) 
 
 ## Methodology
