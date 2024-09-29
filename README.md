@@ -39,16 +39,6 @@ The generated image after running the code will be saved as `out.png`. An exampl
 9. **Save the Result**: 
    The final image with the lines is saved as `out.png`.
 
-## What Did You Try and Why Did It Not Work?
-
-In the initial attempts:
-
-- **Mask Accuracy**: The boundaries of the red regions were not always detected accurately, leading to poor line fitting. This was likely due to noise or gaps in the binary mask. This issue was mitigated by dilating the mask, which improved contour detection.
-  
-- **Point Classification**: Initially, points near the center of the image were sometimes misclassified as left or right points. The solution was to use the bounding box center (`cX`) to accurately divide the points based on the image width.
-
-- **Line Fitting**: At times, the line fitting was unstable when too few points were present. This was improved by ensuring a sufficient number of contours were detected by tuning the dilation parameters and adjusting the HSV range.
-
 ## Libraries Used
 
 1. **OpenCV (cv2)**:
